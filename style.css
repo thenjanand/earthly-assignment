@@ -27,6 +27,11 @@ header {
 }
 .logo h1 {
   font-weight: 500;
+  font-size: 40px;
+}
+.logo img {
+  width: 35px;
+  height: 35px;
 }
 .menu ul {
   display: flex;
@@ -70,20 +75,38 @@ header {
   justify-content: center;
   align-items: center;
 }
-.leftext h1 {
-  font-size: 1000px;
+.lefttext h1 {
+  font-size: 80px;
+}
+.lefttext p{
+  font-size: 40px;
 }
 .searchbtn input {
-  /* border-radius: 40px; */
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
-  padding: 10px 50px 10px 20px;
+  padding: 20px 100px 20px 40px;
 }
 .searchbtn button {
   border-radius: 40px;
-  padding: 10px 20px 10px 20px;
+  padding: 20px 30px 20px 30px;
 }
-
+.community-box{
+  margin-top: 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10px;
+}
+.community-box img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-size: cover;
+  border-color: white;
+  border: 1px;
+  object-fit: cover;
+  
+}
 .right {
   height: 80vh;
   /* background-color: blue; */
@@ -92,8 +115,9 @@ header {
   place-items: center;
 }
 .right img {
-  height: 450px;
-  width: 300px;
+  margin-top: 50px;
+  height: 550px;
+  width: 350px;
   border-radius: 250px 250px 50px 250px;
 }
 
@@ -112,9 +136,10 @@ header {
   place-items: center;
 }
 .mid-left img {
-  background-position: center;
-  height: 450px;
-  width: 300px;
+  background-size: auto;
+  margin-top: 50px;
+  height: 550px;
+  width: 350px;
   border-radius: 250px 50px 250px 250px;
 }
 .mid-right {
@@ -127,29 +152,90 @@ header {
 .mid-right-textbox {
   text-align: left;
 }
+.mid-right-textbox h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.mid-right-textbox p {
+  font-size: 15px;
+}
 .mid-right-textbox button {
-  padding: 5px 10px 5px 10px;
+  padding: 10px 20px 10px 20px;
   border-radius: 40px;
 }
 
 /* ------Product Section------------- */
 .product {
+  background-color: #fafafa;
   height: 100vh;
-  margin: 0px 50px 0px 50px;
-  background-color:blue;
+  display: grid;
+  place-items: center;
+  margin-top: -150px;
 }
+.product-list {
+  /* margin: 100px 50px 100px 50px; */
+}
+
 .head-text {
   text-align: center;
 }
-.cards{
+.head-text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.head-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.cards {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
-.card{
-  background-color: aliceblue;
-  height: 250px;
-  width: 200px;
+.card {
+  background-color: #ffffff;
+  height: 350px;
+  width: 300px;
   display: flex;
   flex-direction: column;
+  border-radius: 30px;
+  padding: 20px;
+}
+.card h3{
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* ------Footer------------ */
+footer {
+  padding: 20px;
+  background-image: url(/images/green-field.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer h1 {
+  font-size: 40px;
+}
+footer p {
+  font-size: 20px;
+}
+form input,
+button {
+  margin: 20px 0px 20px 0px;
+  padding: 10px 50px 10px 20px;
+  border-radius: 40px;
+  font-size: 15px;
+}
+form button {
+  padding: 10px 20px 10px 20px;
+}
+.icons img {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
 }
